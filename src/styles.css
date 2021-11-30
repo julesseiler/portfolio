@@ -1,6 +1,7 @@
 :root {
   --text-decoration: underline;
   --primary-color: lime;
+  --second-color: orange;
   --hover-color: blue;
   --border: 2px solid pink;
 }
@@ -10,7 +11,7 @@ html {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: var(--text-decoration);
 }
 a:hover {
