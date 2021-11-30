@@ -1,0 +1,27 @@
+:root {
+  --text-decoration: underline;
+  --primary-color: lime;
+  --hover-color: blue;
+  --border: 2px solid pink;
+}
+
+html {
+  background-color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: var(--text-decoration);
+}
+a:hover {
+  color: var(--hover-color);
+  text-decoration: var(--text-decoration);
+}
+a:visited {
+  color: orange;
+}
+
+h1 {
+  color: var(--hover-color);
+  border: var(--border);
+}
