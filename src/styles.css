@@ -1,28 +1,71 @@
 :root {
   --text-decoration: underline;
-  --primary-color: lime;
-  --second-color: orange;
-  --hover-color: blue;
-  --border: 2px solid pink;
+  --font-weight: 400;
+  --primary-color: #563d7c;
+  --second-color: black;
+  --hover-color: hotpink;
+  --background-color-light: #8ddad5;
+  --gradient: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+  --text-align: center;
+  --display-block: block;
 }
 
-html {
-  background-color: var(--primary-color);
+body {
+  background: var(--gradient);
+  margin: 60px auto;
+  max-width: 800px;
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: var(--text-decoration);
+  font-weight: var(--font-weight);
+  text-align: var(--text-align);
+  display: var(--display-block);
 }
 a:hover {
-  color: var(--hover-color);
+  color: var(--second-color);
+
   text-decoration: var(--text-decoration);
-}
-a:visited {
-  color: orange;
+  font-weight: var(--font-weight);
 }
 
 h1 {
   color: var(--hover-color);
   border: var(--border);
+  text-align: var(--text-align);
+  font-size: 96px;
+  margin: 0;
+}
+
+h2 {
+  color: var(--primary-color);
+  text-align: var(--text-align);
+  font-size: 48px;
+  margin: 0;
+}
+button {
+  text-align: var(--text-align);
+  display: inline;
+  background-color: var(--gradient);
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px red, 5px 5px orange, 8px 8px yellow, 12px 12px green,
+    15px 15px blue;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+h3 {
+  display: var(--display-block);
+  text-align: var(--text-align);
+}
+
+h4 {
+  color: var(--primary-color);
+  text-align: var(--text-align);
 }
