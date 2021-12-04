@@ -1,21 +1,12 @@
 :root {
-  --text-decoration: underline;
-  --font-weight: 400;
-  --primary-color: #563d7c;
-  --second-color: black;
-  --hover-color: hotpink;
-  --background-color-light: #8ddad5;
-  --gradient: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
-  --text-align: center;
-  --display-block: block;
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-
 body {
-  background: var(--gradient);
   margin: 60px auto;
   max-width: 800px;
 }
-
 a {
   color: var(--primary-color);
   text-decoration: var(--text-decoration);
@@ -23,49 +14,95 @@ a {
   text-align: var(--text-align);
   display: var(--display-block);
 }
-a:hover {
-  color: var(--second-color);
 
-  text-decoration: var(--text-decoration);
-  font-weight: var(--font-weight);
+.buttons-homepage {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.buttons-homepage a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.facts {
+  border: 3px solid var(--hover-color);
+  padding: 10px;
+  flex: 1;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
 }
 
 h1 {
-  color: var(--hover-color);
-  border: var(--border);
-  text-align: var(--text-align);
   font-size: 96px;
-  margin: 0;
 }
 
 h2 {
-  color: var(--primary-color);
-  text-align: var(--text-align);
   font-size: 48px;
-  margin: 0;
-}
-button {
-  text-align: var(--text-align);
-  display: inline;
-  background-color: var(--gradient);
-  border-radius: 25px;
-  border: 2px solid black;
-  padding: 10px;
-  cursor: pointer;
-  box-shadow: 2px 2px red, 5px 5px orange, 8px 8px yellow, 12px 12px green,
-    15px 15px blue;
-}
-
-button:hover {
-  background-color: var(--hover-color);
 }
 
 h3 {
-  display: var(--display-block);
-  text-align: var(--text-align);
+  font-size: 24px;
+  opacity: 0.7;
 }
 
-h4 {
+.homepage-link {
   color: var(--primary-color);
-  text-align: var(--text-align);
+  text-align: center;
+  display: block;
+  text-decoration: underline;
+}
+
+.about-me-info {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-me-info p {
+  margin: 10px;
+}
+
+p {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.legally {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
 }
